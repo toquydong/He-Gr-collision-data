@@ -4,7 +4,7 @@ File name: collisionraw.txt
 This file contains the raw data issued from LAMMPS using a special extension that tracks and records collision information. The control plane is placed at the z coordinate 22.3. The columns are the information of an atom when it crosses the control plane:
 He atom number, time step, coordinate x, coordinate y, coordinate z, velocity Vx,  velocity Vy, velocity Vz, penetration depth Dz, displacement Dx, Displacement Dy
 At the start of the collision, vz is negative and the variables Dx, Dy, Dz are set = 0.
-At the end of the collision, vz is negative and the variables Dx, Dy, Dz are non zero.
+At the end of the collision, vz is positive and the variables Dx, Dy, Dz are non zero.
 
 File name: collisionprocessed.txt
 This file is obtained by post processing the file collisionraw.txt, puting all the information of each collision event together. There are 13 columns in the data
